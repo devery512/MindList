@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   resources :tasks, except: [:index]
   root 'pages#home'
-
+  get '/tasks/new' => 'tasks#new'
 end
